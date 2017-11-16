@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- <div id="moveBox"></div> -->
+        <div class="tab">
+            <div class="item item1" id="0">
+                <span>页面1</span>
+            </div>
+            <div class="item item2" id="1">
+                <span>页面2</span>
+            </div>
+            <div class="item item3" id="2">
+                <span>页面3</span>
+            </div>
+            <div class="item item4" id="3">
+                <span>页面4</span>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item item1" id="0"></div>
+            <div class="item item2" id="1"></div>
+            <div class="item item3" id="2"></div>
+            <div class="item item4" id="3"></div>
+        </div>
+        <div class="find-div-body"></div>
+        <!-- <script src="index.js"></script> -->
+        <script src="move.js"></script>
+        <script src="init.js"></script>
+        <script>
+            new initEntr({
+                selector: '.tab',
+                direction: 'horizon',
+                widthOrHeight: 190,
+            })
+            new initEntr({
+                selector: '.menu',
+                direction: 'vertical',
+                widthOrHeight: 78,
+            });
+
+        </script>
+    </body>
+</html>
